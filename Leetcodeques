@@ -1,0 +1,16 @@
+class Solution {
+public:
+    int numWaterBottles(int numBottles, int numExchange) {
+
+        int ans=numBottles;
+
+        while(numBottles>0){
+            numBottles-=numExchange;
+
+            ans++;
+
+            numBottles+=1;
+        }
+        return ans-1;
+    }
+};
